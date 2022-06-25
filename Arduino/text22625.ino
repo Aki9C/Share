@@ -62,13 +62,13 @@ void lrand(int d){
 void fade(int t){
     int i=2;
     while(t!=0&&i<=9){
-            digitalWrite(i,HIGH);
-            digitalWrite(10,HIGH);
-            delay(10000/t);
-            digitalWrite(i,LOW);
-            digitalWrite(10,LOW);
-            t-=1;
-            i+=1;
+        digitalWrite(i,HIGH);
+        digitalWrite(10,HIGH);
+        delay(10000/t);
+        digitalWrite(i,LOW);
+        digitalWrite(10,LOW);
+        t-=1;
+        i+=1;
         if(i==10){
             i=2;
         }
