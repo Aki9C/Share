@@ -34,7 +34,7 @@ void loop(){
         }
     }
 }
-//顺序亮灯
+//顺序亮灭灯
 void leq(int d){
     for(int i=2;i<=9;i+=1){
         digitalWrite(i,HIGH);
@@ -45,7 +45,7 @@ void leq(int d){
         delay(d);
     }
 }
-//随机亮灯
+//随机亮灭灯
 void lrand(int d){
     int r;
     for(int i=0;i<8;i+=1){
