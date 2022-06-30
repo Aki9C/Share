@@ -1,5 +1,8 @@
 const int Star_BottomPin=12;
 const int Stop_BottomPin=13;
+void lrand(int i);
+void leq(int i);
+void fade(int i);
 void setup(){
     pinMode(Star_BottomPin,INPUT_PULLUP);
     pinMode(Stop_BottomPin,INPUT_PULLUP);
