@@ -23,7 +23,7 @@ void loop(){
            lrand(d);//没被按下时执行的操作
         }
     }
-    if(digitalRead(Stop_BottomPin)==LOW&&digitalReae(Star_BottomPin)==LOW){
+    if(digitalRead(Stop_BottomPin)==LOW&&digitalRead(Star_BottomPin)==LOW){
         delay(80);//设置按钮抖动消除时间
         if(digitalRead(Stop_BottomPin)==LOW){
             unsigned long tm=millis()/1000;//从按下stop按钮开始计时
