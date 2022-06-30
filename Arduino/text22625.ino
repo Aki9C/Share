@@ -13,6 +13,7 @@ void setup(){
 void loop(){
     int k=20;//倒计时参数初期化
     int d=500;//设置led抖动消除时间
+    lrand(d);
     if(digitalRead(Star_BottomPin)==LOW&&digitalRead(Stop_BottomPin)==HIGH){ 
         delay(80);//设置按钮抖动消除时间
         if(digitalRead(Star_BottomPin)==LOW){
