@@ -21,10 +21,10 @@ void loop(){
         if(digitalRead(Star_BottomPin)==LOW){
             leq(d);//star按钮被按下时执行的操作
         }
-        else {
-           lrand(d);//没被按下时执行的操作
-        }
     }
+    else {
+           lrand(d);//没被按下时执行的操作
+         }
     if(digitalRead(Stop_BottomPin)==LOW&&digitalRead(Star_BottomPin)==LOW){
         delay(80);//设置按钮抖动消除时间
         if(digitalRead(Stop_BottomPin)==LOW){
@@ -32,10 +32,10 @@ void loop(){
             fade(k);
             Serial.println(tm);//输出计时
         }
-        else{
+    }
+    else{
             leq(d);
         }
-    }
 }
 //顺序亮灭灯
 void leq(int d){
@@ -64,6 +64,7 @@ void lrand(int d){
 //led亮度和蜂鸣器衰减
 void fade(int t){
     int i=2;
+
     while(t!=0&&i<=9){
         digitalWrite(i,HIGH);
         digitalWrite(10,HIGH);
