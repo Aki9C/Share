@@ -64,7 +64,7 @@ void fade(int t){
     while(t!=0&&i<=9){
         digitalWrite(i,HIGH);
         digitalWrite(10,HIGH);
-        delay(10000/t);
+        delay(1000/t);
         digitalWrite(i,LOW);
         digitalWrite(10,LOW);
         t-=1;
@@ -75,6 +75,6 @@ void fade(int t){
     }
     digitalWrite(i,LOW);
     digitalWrite(10,LOW);
-    delay(10000);
+    delay(1000);
     lrand(500);
 }
